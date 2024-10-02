@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taime</title>
+</head>
+<body>
+<div id="output">
+        <!-- <button id="updateButton">Обновить данные</button>  -->   
+
+    <h1 class="mobile-hidden">Taimetundmine</h1>
+    <div class="wrapper">
+
+        <div class="scroll-container">
+            <div class="image-out" ></div>
+        </div>
+
+        <div>
+            <p class="Eesti">Eestikeelne nimi:</p>
+            <p class="Latin">Ladinakeelne nimi:</p>
+
+
+        </div>
+
+    </div>
+    <div >
+    <h1>Загрузка фото и описания</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data" id="myForm" onsubmit="return readAndProcessFile();">
+        <input type="file" name="photo" id="photo">
+        <input type="text" name="name" id="name" placeholder="Введите имя">
+        <input type="text" name="Eestiname" id="Eestiname" placeholder="Введите эстонское название">
+        <input type="text" name="LatinName" id="LatinName" placeholder="Введите латинское название">
+
+        <input type="submit" value="Загрузить" name="submit">
+
+    </form>
+
+</div>
+</div>
+
+
+
+
+<script src="TaimeList.js"></script>
+<script src="ListScript.js"></script>
+<script src="Script.js"></script>
+</body>
+</html>
